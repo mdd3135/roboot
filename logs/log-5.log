@@ -1,0 +1,33 @@
+[92m2022-07-25 22:39:29 I/main: Starting mirai-console...[0m[m
+[92m2022-07-25 22:39:29 I/main: Backend: version 2.12.0, built on 2022-07-03 10:57:58.[0m[m
+[92m2022-07-25 22:39:29 I/main: Frontend Terminal: version 2.12.0, provided by Mamoe Technologies[0m[m
+[92m2022-07-25 22:39:29 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[91m2022-07-25 22:39:29 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 22:39:29 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 22:39:29 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 22:39:29 I/plugin: Successfully loaded plugin net.mamoe.mirai-api-http v2.5.2[0m[m
+[92m2022-07-25 22:39:29 I/plugin: Successfully loaded plugin MCL Addon v2.0.2[0m[m
+[92m2022-07-25 22:39:30 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[92m2022-07-25 22:39:30 I/Mirai HTTP API: ********************************************************[0m[m
+[91m2022-07-25 22:39:30 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 22:39:30 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 22:39:30 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 22:39:30 I/http adapter: >>> [http adapter] is listening at http://localhost:8081[0m[m
+[92m2022-07-25 22:39:30 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8081[0m[m
+[92m2022-07-25 22:39:30 I/Mirai HTTP API: Http api server is running with verifyKey: yirimirai[0m[m
+[92m2022-07-25 22:39:30 I/Mirai HTTP API: adaptors: [http,ws][0m[m
+[92m2022-07-25 22:39:30 I/Mirai HTTP API: ********************************************************[0m[m
+[92m2022-07-25 22:39:30 I/MCL Addon: iTXTech MCL Version: 2.1.0-71ec418[0m[m
+[91m2022-07-25 22:39:30 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用[0m[m
+[92m2022-07-25 22:39:30 I/main: 2 plugin(s) enabled.[0m[m
+[92m2022-07-25 22:39:30 I/main: mirai-console started successfully.[0m[m
+[92m2022-07-25 22:39:39 I/WindowHelperJvm: Mirai 正在使用桌面环境. 如遇到验证码将会弹出对话框. 可添加 JVM 属性 `mirai.no-desktop` 以关闭.[0m[m
+[92m2022-07-25 22:39:39 I/WindowHelperJvm: Mirai is using desktop. Captcha will be thrown by window popup. You can add `mirai.no-desktop` to JVM properties (-Dmirai.no-desktop) to disable it.[0m[m
+[91m2022-07-25 22:39:39 W/stderr: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...[0m[m
+[92m2022-07-25 22:39:39 I/Bot.811745389: Loaded account secrets from local cache.[0m[m
+[92m2022-07-25 22:39:39 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 22:39:40 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-25 22:39:42 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[92m2022-07-25 22:39:42 I/Bot.811745389: Bot login successful.[0m[m
+[0m2022-07-25 22:39:59 V/Bot.811745389: mdd(313521996) -> 你好[0m[m
+[0m2022-07-25 22:40:00 V/Bot.811745389: Friend(313521996) <- Hello, World![0m[m

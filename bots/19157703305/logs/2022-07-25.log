@@ -1,0 +1,56 @@
+[0m2022-07-25 10:16:41 V/Net 19157703305: No server list cached.[0m
+[92m2022-07-25 10:16:41 I/Net 19157703305: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-25 10:16:42 I/Net 19157703305: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-25 10:16:42 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:43 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:46 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:47 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:49 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:49 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:51 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:51 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:52 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:52 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:53 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:53 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:54 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:54 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:16:55 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:16:55 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:17:04 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:17:04 V/Net 19157703305: Recv: wtlogin.login[0m
+[91m2022-07-25 10:17:04 W/Net 19157703305: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m
+[0m2022-07-25 10:22:54 V/Net 19157703305: No server list cached.[0m
+[92m2022-07-25 10:22:54 I/Net 19157703305: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-25 10:22:55 I/Net 19157703305: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-25 10:22:55 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:22:56 V/Net 19157703305: Recv: wtlogin.login[0m
+[0m2022-07-25 10:23:42 V/Net 19157703305: Send: wtlogin.login[0m
+[0m2022-07-25 10:23:42 V/Net 19157703305: Recv: wtlogin.login[0m
+[91m2022-07-25 10:23:42 W/Net 19157703305: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=1, title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=1, title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m

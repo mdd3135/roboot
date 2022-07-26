@@ -1,0 +1,164 @@
+[92m2022-07-26 08:00:33 I/main: Starting mirai-console...[0m[m
+[92m2022-07-26 08:00:33 I/main: Backend: version 2.12.0, built on 2022-07-03 10:57:58.[0m[m
+[92m2022-07-26 08:00:33 I/main: Frontend Terminal: version 2.12.0, provided by Mamoe Technologies[0m[m
+[92m2022-07-26 08:00:33 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-26 08:00:34 I/plugin: Successfully loaded plugin net.mamoe.mirai-api-http v2.5.2[0m[m
+[92m2022-07-26 08:00:34 I/plugin: Successfully loaded plugin MCL Addon v2.0.2[0m[m
+[92m2022-07-26 08:00:34 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[92m2022-07-26 08:00:34 I/Mirai HTTP API: ********************************************************[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-26 08:00:34 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-26 08:00:34 I/http adapter: >>> [http adapter] is listening at http://localhost:8081[0m[m
+[92m2022-07-26 08:00:34 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8081[0m[m
+[92m2022-07-26 08:00:34 I/Mirai HTTP API: Http api server is running with verifyKey: yirimirai[0m[m
+[92m2022-07-26 08:00:34 I/Mirai HTTP API: adaptors: [http,ws][0m[m
+[92m2022-07-26 08:00:34 I/Mirai HTTP API: ********************************************************[0m[m
+[92m2022-07-26 08:00:34 I/MCL Addon: iTXTech MCL Version: 2.1.0-71ec418[0m[m
+[91m2022-07-26 08:00:34 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用[0m[m
+[92m2022-07-26 08:00:34 I/main: 2 plugin(s) enabled.[0m[m
+[92m2022-07-26 08:00:34 I/main: mirai-console started successfully.[0m[m
+[92m2022-07-26 08:02:13 I/WindowHelperJvm: Mirai 正在使用桌面环境. 如遇到验证码将会弹出对话框. 可添加 JVM 属性 `mirai.no-desktop` 以关闭.[0m[m
+[92m2022-07-26 08:02:13 I/WindowHelperJvm: Mirai is using desktop. Captcha will be thrown by window popup. You can add `mirai.no-desktop` to JVM properties (-Dmirai.no-desktop) to disable it.[0m[m
+[91m2022-07-26 08:02:13 W/stderr: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...[0m[m
+[92m2022-07-26 08:02:13 I/Bot.811745389: Loaded account secrets from local cache.[0m[m
+[92m2022-07-26 08:02:13 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-26 08:02:14 I/Bot.811745389: Login successful.[0m[m
+[92m2022-07-26 08:02:14 I/Bot.811745389: Bot cancelled: Bot closed[0m[m
+[31m2022-07-26 08:02:14 E/console: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:90)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:88)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:192)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+	Suppressed: StateSwitchingException(old=StateLoading, new=StateClosed, cause=net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+	Suppressed: [CIRCULAR REFERENCE: java.util.concurrent.CancellationException: NetworkHandler closed]
+[0m[m
+[92m2022-07-26 08:02:22 I/Bot.811745389: Login successful[0m[m
+[92m2022-07-26 08:02:22 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-26 08:02:22 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-26 08:02:26 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[92m2022-07-26 08:02:26 I/Bot.811745389: Bot login successful.[0m[m
+[0m2022-07-26 08:14:50 V/Bot.811745389: Group(636956662) <- hello, world![0m[m
+[0m2022-07-26 08:14:52 V/Bot.811745389: Group(636956662) <- hello, world![0m[m
+[0m2022-07-26 08:20:23 V/Bot.811745389: mdd(313521996) -> 你好[0m[m
+[0m2022-07-26 08:24:47 V/Bot.811745389: Group(636956662) <- hello, world![0m[m
+[0m2022-07-26 08:25:14 V/Bot.811745389: Group(636956662) <- hello, world![0m[m
+[0m2022-07-26 08:28:24 V/Bot.811745389: Group(636956662) <- hello, world![0m[m
+[0m2022-07-26 08:30:19 V/Bot.811745389: Group(636956662) <- 试试发送消息[0m[m
+[0m2022-07-26 08:34:39 V/Bot.811745389: [🤔电脑医院技术部(仮)(636956662)] 🍊(1620211863) -> 你好[0m[m
+[0m2022-07-26 08:34:46 V/Bot.811745389: Event: GroupRecall(bot=Bot(811745389), authorId=1620211863, messageIds=[4032], messageInternalIds=[49438322], messageTime=1658795678, operator=NormalMember(1620211863), group=Group(636956662), author=NormalMember(1620211863))[0m[m
+[0m2022-07-26 09:11:37 V/Bot.811745389: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> [mirai:image:{D2DD83D5-9F88-CEE1-F7B9-914E485C01DB}.jpg, width=375, height=375, size=19659, type=JPG, isEmoji=true][0m[m
+[0m2022-07-26 10:30:48 V/Bot.811745389: Event: BotOfflineEvent.Dropped(bot=Bot(811745389), cause=HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms), reconnect=true)[0m[m
+[91m2022-07-26 10:30:48 W/Bot.811745389: Connection lost, reconnecting... (HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms))[0m[m
+[92m2022-07-26 10:36:20 I/Bot.811745389: Login successful[0m[m
+[92m2022-07-26 10:36:20 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-26 10:36:20 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-26 10:36:20 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[0m2022-07-26 10:36:20 V/Bot.811745389: Event: BotReloginEvent(bot=Bot(811745389), cause=null)[0m[m
+[92m2022-07-26 10:36:20 I/Bot.811745389: Reconnected successfully in 5min 32.202s.[0m[m
+[0m2022-07-26 10:41:52 V/Bot.811745389: Group(636956662) <- mesg[0m[m
+[31m2022-07-26 10:49:57 E/MAH Access: java.lang.IllegalArgumentException: message is empty
+java.lang.IllegalArgumentException: message is empty
+	at net.mamoe.mirai.internal.contact.AbstractUserKt.sendMessageImpl(AbstractUser.kt:259)
+	at net.mamoe.mirai.internal.contact.GroupImpl.sendMessage(GroupImpl.kt:188)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.internal.action.MessageKt.sendMessage(message.kt:66)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.internal.action.MessageKt.onSendGroupMessage(message.kt:107)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$respondDTOStrategy$3.invokeSuspend(dsl.kt:205)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$respondDTOStrategy$3.invoke(dsl.kt)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$respondDTOStrategy$3.invoke(dsl.kt)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$httpAuthedPost$2$1.invokeSuspend(dsl.kt:214)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$httpAuthedPost$2$1.invoke(dsl.kt)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.router.MessageKt$messageRouter$1$invoke$$inlined$httpAuthedPost$2$1.invoke(dsl.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:248)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:116)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.execute(SuspendFunctionGun.kt:136)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:78)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.routing.Routing.executeResult(Routing.kt:155)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.routing.Routing.interceptor(Routing.kt:39)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.routing.Routing$Feature$install$1.invokeSuspend(Routing.kt:107)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.routing.Routing$Feature$install$1.invoke(Routing.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.routing.Routing$Feature$install$1.invoke(Routing.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:248)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:116)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.auth.Authorization$install$1.invokeSuspend(Authorization.kt:41)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.auth.Authorization$install$1.invoke(Authorization.kt)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.auth.Authorization$install$1.invoke(Authorization.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:248)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:116)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.handler.HttpRouterAccessHandler.intercept(HttpRouterAccessHandler.kt:36)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.handler.HttpRouterAccessHandler.access$intercept(HttpRouterAccessHandler.kt:25)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.handler.HttpRouterAccessHandler$Feature$install$1.invokeSuspend(HttpRouterAccessHandler.kt:91)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.handler.HttpRouterAccessHandler$Feature$install$1.invoke(HttpRouterAccessHandler.kt)
+	at mirai-api-http-2.5.2.jar//net.mamoe.mirai.api.http.adapter.http.feature.handler.HttpRouterAccessHandler$Feature$install$1.invoke(HttpRouterAccessHandler.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:248)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:116)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.execute(SuspendFunctionGun.kt:136)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:78)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$2.invokeSuspend(DefaultEnginePipeline.kt:127)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$2.invoke(DefaultEnginePipeline.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$2.invoke(DefaultEnginePipeline.kt)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:248)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:116)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.SuspendFunctionGun.execute(SuspendFunctionGun.kt:136)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:78)
+	at mirai-api-http-2.5.2.jar[shared]//io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:196)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m[m
+[0m2022-07-26 11:18:34 V/Bot.811745389: Event: BotOfflineEvent.Dropped(bot=Bot(811745389), cause=HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null), reconnect=true)[0m[m
+[91m2022-07-26 11:18:34 W/Bot.811745389: Connection lost, reconnecting... (HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null))[0m[m
+[92m2022-07-26 11:20:21 I/Bot.811745389: Login successful[0m[m
+[92m2022-07-26 11:20:21 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-26 11:20:22 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-26 11:20:22 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[0m2022-07-26 11:20:22 V/Bot.811745389: Event: BotReloginEvent(bot=Bot(811745389), cause=null)[0m[m
+[92m2022-07-26 11:20:22 I/Bot.811745389: Reconnected successfully in 1min 48.065s.[0m[m
+[0m2022-07-26 11:21:27 V/Bot.811745389: Event: BotOfflineEvent.Dropped(bot=Bot(811745389), cause=HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null), reconnect=true)[0m[m
+[91m2022-07-26 11:21:27 W/Bot.811745389: Connection lost, reconnecting... (HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null))[0m[m
+[31m2022-07-26 11:23:13 E/console: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@1f3699a4
+kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@1f3699a4
+[0m[m
+[92m2022-07-26 11:23:13 I/Bot.811745389: Bot cancelled: Job was cancelled[0m[m

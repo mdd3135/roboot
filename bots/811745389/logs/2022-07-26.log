@@ -1,0 +1,1723 @@
+[0m2022-07-26 07:32:14 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 07:32:15 V/: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 07:58:06 V/: Send: StatSvc.register(offline)[0m
+[0m2022-07-26 08:02:13 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 08:02:13 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 08:02:13 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 08:02:13 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 08:02:13 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 08:02:13 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 08:02:14 I/Net 811745389: Server time updated, serverTime: 1658793733, diff: -1ms=-0.001s[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 08:02:14 I/Net 811745389: Syncing friend message history...[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Loading BdhSession from cache file[0m
+[92m2022-07-26 08:02:14 I/Net 811745389: Start loading friend list...[0m
+[92m2022-07-26 08:02:14 I/Net 811745389: Start loading stranger list...[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2022-07-26 08:02:14 V/Net 811745389: Recv: MessageSvc.PushForceOffline[0m
+[91m2022-07-26 08:02:14 W/Net 811745389: An exception was thrown during initialization process of Bot 811745389. Trying to ignore the error and continue logging in...
+StateSwitchingException(old=StateLoading, new=StateClosed, cause=net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:90)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:88)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:192)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+	... 25 more
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+[0m
+[91m2022-07-26 08:02:14 W/Net 811745389: An exception was thrown during initialization process of Bot 811745389. Trying to ignore the error and continue logging in...
+StateSwitchingException(old=StateLoading, new=StateClosed, cause=net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:90)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:88)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:192)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+	... 25 more
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+[0m
+[31m2022-07-26 08:02:14 E/Net 811745389: Exception in coroutine 'unnamed'
+net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:90)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:88)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:192)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+[0m
+[31m2022-07-26 08:02:14 E/Net 811745389: Exception in coroutine 'BotInitProcessor.init'
+java.lang.IllegalStateException: Exception in attached Job 'BotInitProcessor.init'
+	at net.mamoe.mirai.internal.network.handler.state.JobAttachStateObserver$stateChanged0$1.invokeSuspend(JobAttachStateObserver.kt:40)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:90)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:88)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:192)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+	Suppressed: StateSwitchingException(old=StateLoading, new=StateClosed, cause=net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:87)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的QQ号于08:00在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。]
+[0m
+[0m2022-07-26 08:02:21 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 08:02:21 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 08:02:21 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-26 08:02:21 I/Net 811745389: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-26 08:02:21 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Recv: wtlogin.login[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 08:02:22 I/Net 811745389: Server time updated, serverTime: 1658793742, diff: 0ms=0.0s[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 08:02:22 I/Net 811745389: Syncing friend message history...[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Loading BdhSession from cache file[0m
+[92m2022-07-26 08:02:22 I/Net 811745389: Start loading friend list...[0m
+[92m2022-07-26 08:02:22 I/Net 811745389: Start loading stranger list...[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2022-07-26 08:02:22 V/Net 811745389: Recv: OidbSvc.0x5d2_0[0m
+[92m2022-07-26 08:02:22 I/Net 811745389: Successfully loaded stranger list: 0 in total[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2022-07-26 08:02:23 I/Net 811745389: No OtherClient online.[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Recv: OidbSvc.0x496[0m
+[92m2022-07-26 08:02:23 I/Net 811745389: Start loading group list...[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Recv: friendlist.getFriendGroupList[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Loading friend list: 7/7[0m
+[92m2022-07-26 08:02:23 I/Net 811745389: Successfully loaded friend list: 7 in total[0m
+[92m2022-07-26 08:02:23 I/Net 811745389: Syncing friend message history: Success.[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Recv: friendlist.GetTroopListReqV2[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:23 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:24 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 08:02:25 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 08:02:26 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2022-07-26 08:02:26 I/Net 811745389: Successfully loaded group list: 3 in total.[0m
+[92m2022-07-26 08:02:26 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 08:02:26 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2022-07-26 08:14:49 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:14:50 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 08:14:51 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:14:52 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 08:24:47 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:24:47 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 08:25:13 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:25:13 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 08:28:24 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:28:24 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 08:30:18 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 08:30:19 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[91m2022-07-26 10:30:48 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+Caused by: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[91m2022-07-26 10:31:28 W/Net 811745389: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1389)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:1012)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@7fc54141
+	Caused by: [CIRCULAR REFERENCE: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@7fc54141]
+[0m
+[0m2022-07-26 10:31:31 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:31:31 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:31:31 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 10:31:31 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 10:31:36 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 10:31:41 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:31:46 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 10:31:51 W/Net 811745389: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:31:54 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:31:54 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:31:54 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 10:32:34 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:32:34 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:32:39 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:32:47 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:32:47 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:32:47 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 10:33:27 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:33:27 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:33:32 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:33:40 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:33:40 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:33:40 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 10:34:20 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:34:20 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:34:25 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:34:33 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:34:33 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:34:33 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 10:35:13 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:35:13 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:35:18 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:35:26 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:35:26 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:35:26 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 10:36:06 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 10:36:06 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:36:11 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:36:19 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 10:36:19 I/Net 811745389: Server list: msfwifi.3g.qq.com:8080, 125.39.196.158:80, 60.29.242.161:8080, 157.148.36.89:80, 157.148.57.99:80, 125.39.196.167:14000, 59.83.207.217:443, 60.29.240.116:80, 112.86.241.64:8080, 59.83.207.234:8080.[0m
+[92m2022-07-26 10:36:19 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-26 10:36:19 I/Net 811745389: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-26 10:36:19 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 10:36:20 V/Net 811745389: Recv: wtlogin.login[0m
+[0m2022-07-26 10:36:20 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 10:36:20 I/Net 811745389: Server time updated, serverTime: 1658802980, diff: 0ms=0.0s[0m
+[0m2022-07-26 10:36:20 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 10:36:20 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 10:36:20 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 10:36:23 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 10:36:23 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 10:41:52 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 10:41:52 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[91m2022-07-26 11:18:34 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+[0m
+[0m2022-07-26 11:18:34 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:18:34 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[92m2022-07-26 11:18:34 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:18:34 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:18:39 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:18:44 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:18:49 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 11:18:54 W/Net 811745389: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:18:57 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:18:57 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[92m2022-07-26 11:18:57 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:19:17 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:19:17 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:19:22 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:19:30 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:19:30 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[92m2022-07-26 11:19:30 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:19:50 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:19:50 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:19:55 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:20:03 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:20:03 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[92m2022-07-26 11:20:03 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:20:08 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:20:08 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:20:13 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:20:21 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:20:21 I/Net 811745389: Server list: 42.81.194.79:80, 183.47.101.174:8080, 113.96.18.205:14000, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 113.96.18.168:14000, 58.212.179.34:8080, 42.81.192.158:443, 180.102.191.69:8080, 180.101.246.169:80.[0m
+[92m2022-07-26 11:20:21 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-26 11:20:21 I/Net 811745389: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-26 11:20:21 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:20:21 V/Net 811745389: Recv: wtlogin.login[0m
+[0m2022-07-26 11:20:21 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:20:22 I/Net 811745389: Server time updated, serverTime: 1658805622, diff: 0ms=0.0s[0m
+[0m2022-07-26 11:20:22 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 11:20:22 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 11:20:22 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:20:24 I/Net 811745389: Server list: 183.47.98.11:14000, 123.151.54.91:80, 42.81.194.99:443, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 183.47.117.157:8080, 183.47.102.213:14000, 180.101.246.49:8080, 180.102.111.213:80, 180.101.246.160:8080.[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:20:24 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 11:21:27 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+[0m
+[91m2022-07-26 11:21:47 W/Net 811745389: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1389)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:1012)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@3d4b2ee5
+	Caused by: [CIRCULAR REFERENCE: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@3d4b2ee5]
+[0m
+[0m2022-07-26 11:21:50 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:21:50 I/Net 811745389: Server list: 183.47.98.11:14000, 123.151.54.91:80, 42.81.194.99:443, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 183.47.117.157:8080, 183.47.102.213:14000, 180.101.246.49:8080, 180.102.111.213:80, 180.101.246.160:8080.[0m
+[92m2022-07-26 11:21:50 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:21:50 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:21:55 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:22:00 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:22:05 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 11:22:10 W/Net 811745389: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:22:13 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:22:13 I/Net 811745389: Server list: 183.47.98.11:14000, 123.151.54.91:80, 42.81.194.99:443, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 183.47.117.157:8080, 183.47.102.213:14000, 180.101.246.49:8080, 180.102.111.213:80, 180.101.246.160:8080.[0m
+[92m2022-07-26 11:22:13 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:23:13 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.util.concurrent.CancellationException: State is switched from StateConnecting to StateClosed
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:78)
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:76)
+	at kotlinx.coroutines.InvokeOnCancelling.invoke(JobSupport.kt:1457)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCancelling(JobSupport.kt:795)
+	at kotlinx.coroutines.JobSupport.makeCancelling(JobSupport.kt:755)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:671)
+	at kotlinx.coroutines.JobSupport.parentCancelled(JobSupport.kt:637)
+	at kotlinx.coroutines.ChildHandleNode.invoke(JobSupport.kt:1465)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCompletingSlowPath(JobSupport.kt:900)
+	at kotlinx.coroutines.JobSupport.tryMakeCompleting(JobSupport.kt:863)
+	at kotlinx.coroutines.JobSupport.cancelMakeCompleting(JobSupport.kt:696)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:667)
+	at kotlinx.coroutines.JobSupport.cancelInternal(JobSupport.kt:632)
+	at kotlinx.coroutines.JobSupport.cancel(JobSupport.kt:617)
+	at kotlinx.coroutines.CoroutineScopeKt.cancel(CoroutineScope.kt:287)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.handler.selector.AbstractKeepAliveNetworkHandlerSelector$AwaitResumeInstance.runImpl$resumeInstanceCatchingException(AbstractKeepAliveNetworkHandlerSelector.kt:144)
+	at net.mamoe.mirai.internal.network.handler.selector.AbstractKeepAliveNetworkHandlerSelector$AwaitResumeInstance.access$runImpl$resumeInstanceCatchingException(AbstractKeepAliveNetworkHandlerSelector.kt:64)
+	at net.mamoe.mirai.internal.network.handler.selector.AbstractKeepAliveNetworkHandlerSelector$AwaitResumeInstance$runImpl$resumeInstanceCatchingException$1.invokeSuspend(AbstractKeepAliveNetworkHandlerSelector.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m
+[0m2022-07-26 11:23:13 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:23:38 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:23:38 I/Net 811745389: Server list: 183.47.98.11:14000, 123.151.54.91:80, 42.81.194.99:443, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 183.47.117.157:8080, 183.47.102.213:14000, 180.101.246.49:8080, 180.102.111.213:80, 180.101.246.160:8080.[0m
+[92m2022-07-26 11:23:38 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-26 11:23:39 I/Net 811745389: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-26 11:23:39 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Recv: wtlogin.login[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Server time updated, serverTime: 1658805820, diff: 0ms=0.0s[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Recv: StatSvc.register[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Loading BdhSession from cache file[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Syncing friend message history...[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Start loading friend list...[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Start loading stranger list...[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Recv: OidbSvc.0x5d2_0[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Successfully loaded stranger list: 0 in total[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Start loading group list...[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Recv: OidbSvc.0x496[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: No OtherClient online.[0m
+[92m2022-07-26 11:23:40 I/Net 811745389: Syncing friend message history: Success.[0m
+[0m2022-07-26 11:23:40 V/Net 811745389: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.getFriendGroupList[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Loading friend list: 7/7[0m
+[92m2022-07-26 11:23:41 I/Net 811745389: Successfully loaded friend list: 7 in total[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopListReqV2[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:41 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:42 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2022-07-26 11:23:43 I/Net 811745389: Successfully loaded group list: 3 in total.[0m
+[92m2022-07-26 11:23:43 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:23:43 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:23:43 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:24:03 V/Net 811745389: Send: StatSvc.register(offline)[0m
+[0m2022-07-26 11:31:15 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Server list: 183.47.98.11:14000, 123.151.54.91:80, 42.81.194.99:443, msfwifi.3g.qq.com:8080, 42.81.194.79:443, 183.47.117.157:8080, 183.47.102.213:14000, 180.101.246.49:8080, 180.102.111.213:80, 180.101.246.160:8080.[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Server time updated, serverTime: 1658806276, diff: 0ms=0.0s[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: StatSvc.register[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Loading BdhSession from cache file[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Syncing friend message history...[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Start loading friend list...[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Start loading stranger list...[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: OidbSvc.0x496[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Start loading group list...[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: OidbSvc.0x5d2_0[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Successfully loaded stranger list: 0 in total[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: No OtherClient online.[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Syncing friend message history: Success.[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: friendlist.getFriendGroupList[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Loading friend list: 7/7[0m
+[92m2022-07-26 11:31:16 I/Net 811745389: Successfully loaded friend list: 7 in total[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: friendlist.GetTroopListReqV2[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:16 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:17 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:18 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2022-07-26 11:31:19 I/Net 811745389: Successfully loaded group list: 3 in total.[0m
+[92m2022-07-26 11:31:19 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:31:19 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 11:31:19 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:31:19 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 11:36:25 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+Caused by: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:36:25 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:36:25 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:36:25 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:36:25 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:36:30 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:36:35 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:36:40 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 11:36:45 W/Net 811745389: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:36:48 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:36:48 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:36:48 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:37:08 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:37:08 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:37:13 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 11:37:15 W/Net 811745389: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:177)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1186)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:773)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.util.concurrent.CancellationException: NetworkHandler closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at kotlinx.coroutines.JobKt__JobKt.cancel(Job.kt:596)
+		at kotlinx.coroutines.JobKt.cancel(Unknown Source)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.close(NetworkHandlerSupport.kt:61)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:205)
+		... 22 more
+	Caused by: [CIRCULAR REFERENCE: NettyChannelException(message=null, cause=null)]
+	Suppressed: StateSwitchingException(old=StateConnecting, new=StateClosed, cause=NettyChannelException(message=null, cause=null))
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+		... 22 more
+		Suppressed: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+			at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+			at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+			at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+			at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+			at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+			... 1 more
+	Caused by: [CIRCULAR REFERENCE: NettyChannelException(message=null, cause=null)]
+[0m
+[0m2022-07-26 11:37:33 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:37:33 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:37:33 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:37:47 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.util.concurrent.CancellationException: State is switched from StateConnecting to StateClosed
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:78)
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:76)
+	at kotlinx.coroutines.InvokeOnCancelling.invoke(JobSupport.kt:1457)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCancelling(JobSupport.kt:795)
+	at kotlinx.coroutines.JobSupport.makeCancelling(JobSupport.kt:755)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:671)
+	at kotlinx.coroutines.JobSupport.parentCancelled(JobSupport.kt:637)
+	at kotlinx.coroutines.ChildHandleNode.invoke(JobSupport.kt:1465)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCompletingSlowPath(JobSupport.kt:900)
+	at kotlinx.coroutines.JobSupport.tryMakeCompleting(JobSupport.kt:863)
+	at kotlinx.coroutines.JobSupport.cancelMakeCompleting(JobSupport.kt:696)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:667)
+	at kotlinx.coroutines.JobSupport.cancelInternal(JobSupport.kt:632)
+	at kotlinx.coroutines.JobSupport.cancel(JobSupport.kt:617)
+	at kotlinx.coroutines.CoroutineScopeKt.cancel(CoroutineScope.kt:287)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:177)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1186)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:773)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:37:47 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:37:50 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:37:50 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:37:50 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:37:53 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.net.UnknownHostException: keyrotate.qq.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:948)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1032)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:37:53 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:37:58 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:38:06 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:38:06 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:38:06 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:38:19 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.util.concurrent.CancellationException: State is switched from StateConnecting to StateClosed
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:78)
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:76)
+	at kotlinx.coroutines.InvokeOnCancelling.invoke(JobSupport.kt:1457)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCancelling(JobSupport.kt:795)
+	at kotlinx.coroutines.JobSupport.makeCancelling(JobSupport.kt:755)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:671)
+	at kotlinx.coroutines.JobSupport.parentCancelled(JobSupport.kt:637)
+	at kotlinx.coroutines.ChildHandleNode.invoke(JobSupport.kt:1465)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCompletingSlowPath(JobSupport.kt:900)
+	at kotlinx.coroutines.JobSupport.tryMakeCompleting(JobSupport.kt:863)
+	at kotlinx.coroutines.JobSupport.cancelMakeCompleting(JobSupport.kt:696)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:667)
+	at kotlinx.coroutines.JobSupport.cancelInternal(JobSupport.kt:632)
+	at kotlinx.coroutines.JobSupport.cancel(JobSupport.kt:617)
+	at kotlinx.coroutines.CoroutineScopeKt.cancel(CoroutineScope.kt:287)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:177)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1186)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:773)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:38:19 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:38:22 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:38:22 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:38:22 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[31m2022-07-26 11:38:24 E/Net 811745389: Failed to fetch ECDH public key from server, using default key instead
+java.util.concurrent.CancellationException: State is switched from StateConnecting to StateClosed
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:78)
+	at io.ktor.client.engine.UtilsKt$attachToUserJob$cleanupHandler$1.invoke(Utils.kt:76)
+	at kotlinx.coroutines.InvokeOnCancelling.invoke(JobSupport.kt:1457)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCancelling(JobSupport.kt:795)
+	at kotlinx.coroutines.JobSupport.makeCancelling(JobSupport.kt:755)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:671)
+	at kotlinx.coroutines.JobSupport.parentCancelled(JobSupport.kt:637)
+	at kotlinx.coroutines.ChildHandleNode.invoke(JobSupport.kt:1465)
+	at kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1499)
+	at kotlinx.coroutines.JobSupport.tryMakeCompletingSlowPath(JobSupport.kt:900)
+	at kotlinx.coroutines.JobSupport.tryMakeCompleting(JobSupport.kt:863)
+	at kotlinx.coroutines.JobSupport.cancelMakeCompleting(JobSupport.kt:696)
+	at kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:667)
+	at kotlinx.coroutines.JobSupport.cancelInternal(JobSupport.kt:632)
+	at kotlinx.coroutines.JobSupport.cancel(JobSupport.kt:617)
+	at kotlinx.coroutines.CoroutineScopeKt.cancel(CoroutineScope.kt:287)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:302)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:422)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:177)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1186)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:773)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:38:24 V/Net 811745389: Send: wtlogin.login[0m
+[91m2022-07-26 11:38:57 W/Net 811745389: io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443
+io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@21ec3804
+	Caused by: [CIRCULAR REFERENCE: io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@21ec3804]
+[0m
+[91m2022-07-26 11:39:00 W/Net 811745389: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.202:80
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.202:80
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@664e4951
+	Caused by: [CIRCULAR REFERENCE: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.202:80]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@664e4951]
+Caused by: java.net.NoRouteToHostException: 没有到主机的路由
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[91m2022-07-26 11:39:35 W/Net 811745389: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1389)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:1012)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@62d27e11
+	Caused by: [CIRCULAR REFERENCE: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@62d27e11]
+[0m
+[0m2022-07-26 11:40:11 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:40:11 I/Net 811745389: Server list: 36.155.201.42:14000, 111.30.182.254:14000, msfwifi.3g.qq.com:8080, 36.155.201.31:80, 111.31.205.248:80, 111.30.169.45:80, 120.232.130.99:443, 111.31.205.202:80, 120.232.31.192:8080, 36.155.213.142:14000.[0m
+[92m2022-07-26 11:40:11 I/Net 811745389: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2022-07-26 11:40:13 I/Net 811745389: Successfully fetched ecdh public key from server.[0m
+[0m2022-07-26 11:40:13 V/Net 811745389: Send: wtlogin.login[0m
+[0m2022-07-26 11:40:13 V/Net 811745389: Recv: wtlogin.login[0m
+[0m2022-07-26 11:40:13 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:40:14 I/Net 811745389: Server time updated, serverTime: 1658806813, diff: -1ms=-0.001s[0m
+[0m2022-07-26 11:40:14 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 11:40:14 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 11:40:14 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:40:17 I/Net 811745389: Server list: 36.155.207.186:14000, 36.155.213.212:80, 120.232.69.203:443, 111.30.187.200:80, 111.30.187.201:80, 111.30.187.245:8080, 120.232.67.160:8080, 111.31.205.248:80, 36.155.227.171:8080, msfwifi.3g.qq.com:8080.[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:40:17 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 11:46:19 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+Caused by: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[91m2022-07-26 11:46:29 W/Net 811745389: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1638)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1628)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1494)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1389)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:1012)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@2506fe2f
+	Caused by: [CIRCULAR REFERENCE: java.net.UnknownHostException: msfwifi.3g.qq.com: 域名解析暂时失败]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@2506fe2f]
+[0m
+[0m2022-07-26 11:46:32 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:46:32 I/Net 811745389: Server list: 36.155.207.186:14000, 36.155.213.212:80, 120.232.69.203:443, 111.30.187.200:80, 111.30.187.201:80, 111.30.187.245:8080, 120.232.67.160:8080, 111.31.205.248:80, 36.155.227.171:8080, msfwifi.3g.qq.com:8080.[0m
+[92m2022-07-26 11:46:32 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:46:32 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:46:33 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:46:33 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:46:33 I/Net 811745389: Server time updated, serverTime: 1658807193, diff: 0ms=0.0s[0m
+[0m2022-07-26 11:46:33 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 11:46:33 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:46:33 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 11:46:36 I/Net 811745389: Server list: 180.101.246.26:8080, 183.47.102.165:8080, 180.109.192.45:8080, 183.47.102.218:14000, 183.47.98.25:14000, msfwifi.3g.qq.com:8080, 180.102.191.164:80, 221.238.41.118:80, 42.81.194.38:443, 123.151.54.150:443.[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:46:36 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 11:49:39 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+Caused by: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:184)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:154)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:502)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:279)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 11:49:39 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 11:49:39 I/Net 811745389: Server list: 180.101.246.26:8080, 183.47.102.165:8080, 180.109.192.45:8080, 183.47.102.218:14000, 183.47.98.25:14000, msfwifi.3g.qq.com:8080, 180.102.191.164:80, 221.238.41.118:80, 42.81.194.38:443, 123.151.54.150:443.[0m
+[92m2022-07-26 11:49:39 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 11:49:39 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:49:39 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 11:49:39 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 11:49:39 I/Net 811745389: Server time updated, serverTime: 1658807379, diff: 0ms=0.0s[0m
+[0m2022-07-26 11:49:39 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 11:49:39 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 11:49:39 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 11:49:42 I/Net 811745389: Server list: 111.31.205.202:443, 36.155.213.147:80, 36.155.213.142:14000, msfwifi.3g.qq.com:8080, 111.31.205.184:80, 111.31.200.229:80, 120.232.130.20:8080, 120.232.67.156:443, 111.31.200.220:80, 36.155.209.114:8080.[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 11:49:42 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 12:04:48 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+[0m
+[0m2022-07-26 12:04:48 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 12:04:48 I/Net 811745389: Server list: 111.31.205.202:443, 36.155.213.147:80, 36.155.213.142:14000, msfwifi.3g.qq.com:8080, 111.31.205.184:80, 111.31.200.229:80, 120.232.130.20:8080, 120.232.67.156:443, 111.31.200.220:80, 36.155.209.114:8080.[0m
+[92m2022-07-26 12:04:48 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 12:04:48 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 12:04:48 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 12:04:48 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 12:04:48 I/Net 811745389: Server time updated, serverTime: 1658808288, diff: 0ms=0.0s[0m
+[0m2022-07-26 12:04:48 V/Net 811745389: Recv: StatSvc.register[0m
+[92m2022-07-26 12:04:48 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2022-07-26 12:04:48 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 12:04:51 I/Net 811745389: Server list: 111.31.205.233:80, 111.30.169.43:14000, 36.155.248.44:443, 36.155.245.173:80, 120.232.69.173:443, 120.232.31.192:8080, 111.31.205.197:80, 111.30.182.254:80, 36.155.201.197:14000, msfwifi.3g.qq.com:8080.[0m
+[0m2022-07-26 12:04:51 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 12:04:51 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 12:04:51 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 12:04:51 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 12:04:52 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 12:04:52 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 12:04:52 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[91m2022-07-26 12:07:54 W/Net 811745389: HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:369)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:288)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:421)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:368)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:130)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=null)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:132)
+	... 12 more
+[0m
+[91m2022-07-26 12:08:24 W/Net 811745389: io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443
+io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@7543b77c
+	Caused by: [CIRCULAR REFERENCE: io.netty.channel.ConnectTimeoutException: connection timed out: /120.232.130.99:443]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@7543b77c]
+[0m
+[91m2022-07-26 12:10:06 W/Net 811745389: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.233:80
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.233:80
+	Suppressed: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@f5e2890
+	Caused by: [CIRCULAR REFERENCE: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: 没有到主机的路由: /111.31.205.233:80]
+	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Parent job is Cancelling; job=JobImpl{Cancelled}@f5e2890]
+Caused by: java.net.NoRouteToHostException: 没有到主机的路由
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[0m
+[0m2022-07-26 15:33:30 V/Net 811745389: Loading server list from cache.[0m
+[92m2022-07-26 15:33:30 I/Net 811745389: Server list: 111.31.205.233:80, 111.30.169.43:14000, 36.155.248.44:443, 36.155.245.173:80, 120.232.69.173:443, 120.232.31.192:8080, 111.31.205.197:80, 111.30.182.254:80, 36.155.201.197:14000, msfwifi.3g.qq.com:8080.[0m
+[92m2022-07-26 15:33:30 I/Net 811745389: ECDH key is valid.[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: wtlogin.exchange_emp[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: wtlogin.exchange_emp[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: StatSvc.register(online)[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Server time updated, serverTime: 1658820811, diff: 0ms=0.0s[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: StatSvc.register[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Loading BdhSession from cache file[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Syncing friend message history...[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Start loading friend list...[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Start loading stranger list...[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: OidbSvc.0x5d2_0[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Successfully loaded stranger list: 0 in total[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: No OtherClient online.[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Start loading group list...[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: OidbSvc.0x496[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Syncing friend message history: Success.[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: friendlist.getFriendGroupList[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Loading friend list: 7/7[0m
+[92m2022-07-26 15:33:31 I/Net 811745389: Successfully loaded friend list: 7 in total[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Recv: friendlist.GetTroopListReqV2[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:31 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:32 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:32 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:32 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:32 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:32 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:33 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[92m2022-07-26 15:33:34 I/Net 811745389: Server list: 111.30.169.45:443, 36.155.206.174:80, 36.155.208.73:14000, 111.31.205.202:80, 36.155.245.243:8080, 111.31.205.231:80, msfwifi.3g.qq.com:8080, 120.232.31.177:443, 111.30.169.58:80, 120.232.18.213:8080.[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Saving server list to cache[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Saving bdh session to cache[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: ConfigPushSvc.PushReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2022-07-26 15:33:34 V/Net 811745389: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2022-07-26 15:33:34 I/Net 811745389: Successfully loaded group list: 3 in total.[0m
+[92m2022-07-26 15:33:34 I/Net 811745389: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2022-07-26 15:33:34 I/Net 811745389: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[0m2022-07-26 15:33:48 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 15:33:49 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 15:34:37 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 15:34:37 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 15:35:04 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 15:35:04 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m
+[0m2022-07-26 15:37:15 V/Net 811745389: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2022-07-26 15:37:15 V/Net 811745389: Recv: MessageSvc.PbSendMsg[0m

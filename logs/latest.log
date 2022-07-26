@@ -1,0 +1,38 @@
+[92m2022-07-26 15:33:04 I/main: Starting mirai-console...[0m[m
+[92m2022-07-26 15:33:04 I/main: Backend: version 2.12.0, built on 2022-07-03 10:57:58.[0m[m
+[92m2022-07-26 15:33:04 I/main: Frontend Terminal: version 2.12.0, provided by Mamoe Technologies[0m[m
+[92m2022-07-26 15:33:04 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-26 15:33:04 I/plugin: Successfully loaded plugin net.mamoe.mirai-api-http v2.5.2[0m[m
+[92m2022-07-26 15:33:04 I/plugin: Successfully loaded plugin MCL Addon v2.0.2[0m[m
+[92m2022-07-26 15:33:04 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[92m2022-07-26 15:33:04 I/Mirai HTTP API: ********************************************************[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-26 15:33:04 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-26 15:33:05 I/http adapter: >>> [http adapter] is listening at http://localhost:8081[0m[m
+[92m2022-07-26 15:33:05 I/ws adapter: >>> [ws adapter] is listening at ws://localhost:8081[0m[m
+[92m2022-07-26 15:33:05 I/Mirai HTTP API: Http api server is running with verifyKey: yirimirai[0m[m
+[92m2022-07-26 15:33:05 I/Mirai HTTP API: adaptors: [http,ws][0m[m
+[92m2022-07-26 15:33:05 I/Mirai HTTP API: ********************************************************[0m[m
+[92m2022-07-26 15:33:05 I/MCL Addon: iTXTech MCL Version: 2.1.0-71ec418[0m[m
+[91m2022-07-26 15:33:05 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用[0m[m
+[92m2022-07-26 15:33:05 I/main: 2 plugin(s) enabled.[0m[m
+[92m2022-07-26 15:33:05 I/main: mirai-console started successfully.[0m[m
+[92m2022-07-26 15:33:30 I/WindowHelperJvm: Mirai 正在使用桌面环境. 如遇到验证码将会弹出对话框. 可添加 JVM 属性 `mirai.no-desktop` 以关闭.[0m[m
+[92m2022-07-26 15:33:30 I/WindowHelperJvm: Mirai is using desktop. Captcha will be thrown by window popup. You can add `mirai.no-desktop` to JVM properties (-Dmirai.no-desktop) to disable it.[0m[m
+[91m2022-07-26 15:33:30 W/stderr: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...[0m[m
+[92m2022-07-26 15:33:30 I/Bot.811745389: Loaded account secrets from local cache.[0m[m
+[92m2022-07-26 15:33:31 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-26 15:33:31 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-26 15:33:34 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[92m2022-07-26 15:33:34 I/Bot.811745389: Bot login successful.[0m[m
+[0m2022-07-26 15:33:49 V/Bot.811745389: Group(636956662) <- asdf[0m[m
+[0m2022-07-26 15:34:37 V/Bot.811745389: Group(636956662) <- content[0m[m
+[0m2022-07-26 15:35:04 V/Bot.811745389: Group(636956662) <- 姓名：yzw\n联系方式：qq:9876543\n问题描述：测试一下提交后机器人自动发送消息\n问题分类：网络\n[0m[m
+[0m2022-07-26 15:35:34 V/Bot.811745389: [🤔电脑医院技术部(仮)(636956662)] mdd(313521996) -> [打call]可以了[0m[m
+[0m2022-07-26 15:36:14 V/Bot.811745389: [🤔电脑医院技术部(仮)(636956662)] 🍊(1620211863) -> [mirai:image:{3145E19E-53C0-162B-65DD-803592361EB3}.jpg, width=68, height=68, size=4114, type=GIF, isEmoji=true][0m[m
+[0m2022-07-26 15:36:39 V/Bot.811745389: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> [mirai:image:{3145E19E-53C0-162B-65DD-803592361EB3}.gif, width=68, height=68, size=4114, type=GIF, isEmoji=true][0m[m
+[0m2022-07-26 15:37:15 V/Bot.811745389: Group(636956662) <- 姓名：mdd\n联系方式：qq:313521996\n问题描述：测试一下机器人自动发送消息\n问题分类：网络\n[0m[m

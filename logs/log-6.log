@@ -1,0 +1,6 @@
+[0m2022-07-26 07:32:04 V/Bot.811745389: mdd(313521996) -> 你你好好[0m[m
+[0m2022-07-26 07:32:08 V/Bot.811745389: mdd(313521996) -> 你8好[0m[m
+[0m2022-07-26 07:32:14 V/Bot.811745389: mdd(313521996) -> 你好[0m[m
+[0m2022-07-26 07:32:15 V/Bot.811745389: Friend(313521996) <- Hello, World![0m[m
+[0m2022-07-26 07:58:06 V/Bot.811745389: Event: BotOfflineEvent.Dropped(bot=Bot(811745389), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m[m
+[92m2022-07-26 07:58:06 I/Bot.811745389: Bot cancelled: Job was cancelled[0m[m

@@ -1,0 +1,40 @@
+[92m2022-07-25 10:02:31 I/main: Starting mirai-console...[0m[m
+[92m2022-07-25 10:02:31 I/main: Backend: version 2.12.0, built on 2022-07-03 10:57:58.[0m[m
+[92m2022-07-25 10:02:31 I/main: Frontend Terminal: version 2.12.0, provided by Mamoe Technologies[0m[m
+[92m2022-07-25 10:02:31 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[91m2022-07-25 10:02:31 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 10:02:31 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 10:02:31 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 10:03:06 I/plugin: Successfully loaded plugin net.mamoe.mirai-api-http v2.5.2[0m[m
+[92m2022-07-25 10:03:06 I/plugin: Successfully loaded plugin MCL Addon v2.0.2[0m[m
+[92m2022-07-25 10:03:06 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[91m2022-07-25 10:03:06 W/net.mamoe.mirai-api-http: USING INITIAL KEY, please edit the key[0m[m
+[92m2022-07-25 10:03:06 I/Mirai HTTP API: ********************************************************[0m[m
+[91m2022-07-25 10:03:06 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 10:03:06 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 10:03:06 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 10:03:06 I/http adapter: >>> [http adapter] is listening at http://localhost:8080[0m[m
+[92m2022-07-25 10:03:06 I/Mirai HTTP API: Http api server is running with verifyKey: INITKEYsiI61idi[0m[m
+[92m2022-07-25 10:03:06 I/Mirai HTTP API: adaptors: [http][0m[m
+[92m2022-07-25 10:03:06 I/Mirai HTTP API: ********************************************************[0m[m
+[92m2022-07-25 10:03:06 I/MCL Addon: iTXTech MCL Version: 2.1.0-71ec418[0m[m
+[91m2022-07-25 10:03:06 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用[0m[m
+[92m2022-07-25 10:03:06 I/main: 2 plugin(s) enabled.[0m[m
+[92m2022-07-25 10:03:06 I/main: mirai-console started successfully.[0m[m
+[92m2022-07-25 20:43:09 I/WindowHelperJvm: Mirai 正在使用桌面环境. 如遇到验证码将会弹出对话框. 可添加 JVM 属性 `mirai.no-desktop` 以关闭.[0m[m
+[92m2022-07-25 20:43:09 I/WindowHelperJvm: Mirai is using desktop. Captcha will be thrown by window popup. You can add `mirai.no-desktop` to JVM properties (-Dmirai.no-desktop) to disable it.[0m[m
+[91m2022-07-25 20:43:10 W/stderr: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...[0m[m
+[92m2022-07-25 20:44:37 I/Bot.811745389: Login successful[0m[m
+[92m2022-07-25 20:44:37 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 20:44:37 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-25 20:44:40 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[92m2022-07-25 20:44:40 I/Bot.811745389: Bot login successful.[0m[m
+[0m2022-07-25 21:08:51 V/Bot.811745389: Event: BotOfflineEvent.Dropped(bot=Bot(811745389), cause=HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms), reconnect=true)[0m[m
+[91m2022-07-25 21:08:51 W/Bot.811745389: Connection lost, reconnecting... (HeartbeatFailedException: 811745389.AliveHeartbeat, recoverable=true, cause=PacketTimeoutException(message=811745389.AliveHeartbeat Scheduler: Timeout receiving action response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms))[0m[m
+[92m2022-07-25 21:08:51 I/Bot.811745389: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 21:08:51 I/Bot.811745389: Login successful.[0m[m
+[0m2022-07-25 21:08:51 V/Bot.811745389: Event: BotOnlineEvent(bot=Bot(811745389))[0m[m
+[0m2022-07-25 21:08:51 V/Bot.811745389: Event: BotReloginEvent(bot=Bot(811745389), cause=null)[0m[m
+[92m2022-07-25 21:08:51 I/Bot.811745389: Reconnected successfully in 0.292s.[0m[m
+[92m2022-07-25 21:51:35 I/Bot.811745389: Bot cancelled: Job was cancelled[0m[m
+[0m2022-07-25 21:51:35 V/Bot.811745389: Event: BotOfflineEvent.Active(bot=Bot(811745389), cause=kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelled}@3a866f35, reconnect=false)[0m[m

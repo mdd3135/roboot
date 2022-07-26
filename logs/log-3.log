@@ -1,0 +1,168 @@
+[92m2022-07-25 10:12:44 I/main: Starting mirai-console...[0m[m
+[92m2022-07-25 10:12:44 I/main: Backend: version 2.12.0, built on 2022-07-03 10:57:58.[0m[m
+[92m2022-07-25 10:12:44 I/main: Frontend Terminal: version 2.12.0, provided by Mamoe Technologies[0m[m
+[92m2022-07-25 10:12:44 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[91m2022-07-25 10:12:44 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 10:12:44 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 10:12:44 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 10:12:45 I/plugin: Successfully loaded plugin net.mamoe.mirai-api-http v2.5.2[0m[m
+[92m2022-07-25 10:12:45 I/plugin: Successfully loaded plugin MCL Addon v2.0.2[0m[m
+[92m2022-07-25 10:12:45 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[91m2022-07-25 10:12:45 W/net.mamoe.mirai-api-http: USING INITIAL KEY, please edit the key[0m[m
+[92m2022-07-25 10:12:45 I/Mirai HTTP API: ********************************************************[0m[m
+[91m2022-07-25 10:12:45 W/stderr: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".[0m[m
+[91m2022-07-25 10:12:45 W/stderr: SLF4J: Defaulting to no-operation (NOP) logger implementation[0m[m
+[91m2022-07-25 10:12:45 W/stderr: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.[0m[m
+[92m2022-07-25 10:12:45 I/http adapter: >>> [http adapter] is listening at http://localhost:8081[0m[m
+[92m2022-07-25 10:12:45 I/Mirai HTTP API: Http api server is running out of verify mode[0m[m
+[92m2022-07-25 10:12:45 I/Mirai HTTP API: adaptors: [http][0m[m
+[92m2022-07-25 10:12:45 I/Mirai HTTP API: ********************************************************[0m[m
+[92m2022-07-25 10:12:45 I/MCL Addon: iTXTech MCL Version: 2.1.0-71ec418[0m[m
+[91m2022-07-25 10:12:45 W/MCL Addon: iTXTech Soyuz 未安装，Soyuz MCL Handler 特性已禁用[0m[m
+[92m2022-07-25 10:12:45 I/main: 2 plugin(s) enabled.[0m[m
+[92m2022-07-25 10:12:45 I/main: mirai-console started successfully.[0m[m
+[91m2022-07-25 10:12:53 W/console: 未知指令: /mirai-console, 输入 ? 获取帮助[0m[m
+[92m2022-07-25 10:13:21 I/WindowHelperJvm: Mirai 正在使用桌面环境. 如遇到验证码将会弹出对话框. 可添加 JVM 属性 `mirai.no-desktop` 以关闭.[0m[m
+[92m2022-07-25 10:13:21 I/WindowHelperJvm: Mirai is using desktop. Captcha will be thrown by window popup. You can add `mirai.no-desktop` to JVM properties (-Dmirai.no-desktop) to disable it.[0m[m
+[91m2022-07-25 10:13:21 W/stderr: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...[0m[m
+[92m2022-07-25 10:14:31 I/Bot.313521996: Bot cancelled: Bot closed[0m[m
+[31m2022-07-25 10:14:31 E/console: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: java.util.concurrent.CancellationException: Bot closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at net.mamoe.mirai.internal.AbstractBot.close(AbstractBot.kt:112)
+		at net.mamoe.mirai.internal.QQAndroidBot.close(QQAndroidBot.kt:84)
+		at net.mamoe.mirai.internal.AbstractBot.login(AbstractBot.kt:136)
+		at net.mamoe.mirai.internal.AbstractBot$login$1.invokeSuspend(AbstractBot.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+		... 4 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)]
+[0m[m
+[92m2022-07-25 10:16:15 I/Bot.313521996: Bot cancelled: Bot closed[0m[m
+[31m2022-07-25 10:16:15 E/console: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: java.util.concurrent.CancellationException: Bot closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at net.mamoe.mirai.internal.AbstractBot.close(AbstractBot.kt:112)
+		at net.mamoe.mirai.internal.QQAndroidBot.close(QQAndroidBot.kt:84)
+		at net.mamoe.mirai.internal.AbstractBot.login(AbstractBot.kt:136)
+		at net.mamoe.mirai.internal.AbstractBot$login$1.invokeSuspend(AbstractBot.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+		... 4 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(313521996), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)]
+[0m[m
+[92m2022-07-25 10:17:04 I/Bot.19157703305: Bot cancelled: Bot closed[0m[m
+[31m2022-07-25 10:17:04 E/console: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: java.util.concurrent.CancellationException: Bot closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at net.mamoe.mirai.internal.AbstractBot.close(AbstractBot.kt:112)
+		at net.mamoe.mirai.internal.QQAndroidBot.close(QQAndroidBot.kt:84)
+		at net.mamoe.mirai.internal.AbstractBot.login(AbstractBot.kt:136)
+		at net.mamoe.mirai.internal.AbstractBot$login$1.invokeSuspend(AbstractBot.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+		... 4 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=237, title=安全提醒, message=当前登录存在安全风险，请使用常用设备或通过手机号登录。, errorInfo=)]
+[0m[m
+[92m2022-07-25 10:23:42 I/Bot.19157703305: Bot cancelled: Bot closed[0m[m
+[31m2022-07-25 10:23:42 E/console: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=1, title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=1, title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:284)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: java.util.concurrent.CancellationException: Bot closed
+		at kotlinx.coroutines.ExceptionsKt.CancellationException(Exceptions.kt:22)
+		at net.mamoe.mirai.internal.AbstractBot.close(AbstractBot.kt:112)
+		at net.mamoe.mirai.internal.QQAndroidBot.close(QQAndroidBot.kt:84)
+		at net.mamoe.mirai.internal.AbstractBot.login(AbstractBot.kt:136)
+		at net.mamoe.mirai.internal.AbstractBot$login$1.invokeSuspend(AbstractBot.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+		... 4 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(19157703305), code=1, title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)]
+[0m[m
+[92m2022-07-25 10:25:42 I/Bot.313521996: Login successful[0m[m
+[92m2022-07-25 10:25:42 I/Bot.313521996: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 10:25:43 I/Bot.313521996: Login successful.[0m[m
+[0m2022-07-25 10:25:49 V/Bot.313521996: Event: BotOnlineEvent(bot=Bot(313521996))[0m[m
+[92m2022-07-25 10:25:49 I/Bot.313521996: Bot login successful.[0m[m
+[0m2022-07-25 10:26:36 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 反正我app还留着，可以直接发码让我滑一下（x[0m[m
+[0m2022-07-25 10:26:39 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 这居然是安卓版[0m[m
+[0m2022-07-25 10:26:45 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 登上了[0m[m
+[0m2022-07-25 10:27:13 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 但是会把我手机qq挤下线[0m[m
+[0m2022-07-25 10:27:36 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 登录设备那边选pad最好[0m[m
+[0m2022-07-25 10:27:44 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 手机电脑都不会挤[0m[m
+[0m2022-07-25 10:28:35 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 怎么选登录设备[0m[m
+[0m2022-07-25 10:30:52 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 嘶突然找不到了[0m[m
+[0m2022-07-25 10:32:09 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 要不机器人这块你来做，把电脑医院官方号当机器人[菜狗][0m[m
+[0m2022-07-25 10:32:33 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> config文件夹里有settings.yml，那里改[0m[m
+[0m2022-07-25 10:32:40 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> az[0m[m
+[0m2022-07-25 10:33:07 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 草，不对，那里怎么也没有[0m[m
+[0m2022-07-25 10:34:26 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> 哦在autologin里[0m[m
+[0m2022-07-25 10:35:23 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 截图看看[0m[m
+[0m2022-07-25 10:36:20 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> [mirai:image:{25DF0081-3B17-CEEB-582A-57D480F73C02}.png, width=1066, height=441, size=58392, type=PNG, isEmoji=false][0m[m
+[0m2022-07-25 10:38:20 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)] Pst(2524055528) -> device.json相关\nhttps://www.csdn.net/tags/MtTaEgzsNjcxMTM4LWJsb2cO0O0O.html[0m[m
+[0m2022-07-25 10:41:35 V/Bot.313521996: [🤔电脑医院技术部(仮)(636956662)][SYNC] <- 噢[0m[m
+[0m2022-07-25 10:42:14 V/Bot.313521996: [冲刺2022(1012016246)] 计科1901 冯则涛(3058852685) -> 恩，明天下午热身赛，我去把环境弄好[0m[m
+[0m2022-07-25 11:01:23 V/Bot.313521996: Event: BotOfflineEvent.Force(bot=Bot(313521996), title='下线通知', message='你的QQ号于11:01在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。', reconnect=true)[0m[m
+[91m2022-07-25 11:01:23 W/Bot.313521996: Connection occupied by another android device: 你的QQ号于11:01在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。[0m[m
+[92m2022-07-25 11:01:23 I/Bot.313521996: Login successful[0m[m
+[92m2022-07-25 11:01:23 I/Bot.313521996: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 11:01:24 I/Bot.313521996: Login successful.[0m[m
+[0m2022-07-25 11:01:24 V/Bot.313521996: Event: BotOnlineEvent(bot=Bot(313521996))[0m[m
+[0m2022-07-25 11:01:24 V/Bot.313521996: Event: BotReloginEvent(bot=Bot(313521996), cause=null)[0m[m
+[92m2022-07-25 11:01:24 I/Bot.313521996: Reconnected successfully in 1.249s.[0m[m
+[0m2022-07-25 11:01:27 V/Bot.313521996: Event: BotOfflineEvent.Force(bot=Bot(313521996), title='下线通知', message='你的QQ号于11:01在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。', reconnect=true)[0m[m
+[91m2022-07-25 11:01:27 W/Bot.313521996: Connection occupied by another android device: 你的QQ号于11:01在【V2055A】设备登录，当前设备已下线。如果这不是你本人操作，那么你的QQ密码可能已经泄露，请尽快重新登录并修改密码。[0m[m
+[92m2022-07-25 11:01:29 I/Bot.313521996: Login successful[0m[m
+[92m2022-07-25 11:01:29 I/Bot.313521996: Saved account secrets to local cache for fast login.[0m[m
+[92m2022-07-25 11:01:29 I/Bot.313521996: Login successful.[0m[m
+[0m2022-07-25 11:01:29 V/Bot.313521996: Event: BotOnlineEvent(bot=Bot(313521996))[0m[m
+[0m2022-07-25 11:01:29 V/Bot.313521996: Event: BotReloginEvent(bot=Bot(313521996), cause=null)[0m[m
+[92m2022-07-25 11:01:29 I/Bot.313521996: Reconnected successfully in 1.646s.[0m[m
+[0m2022-07-25 11:01:43 V/Bot.313521996: Event: BotOfflineEvent.Active(bot=Bot(313521996), cause=kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@5cd8288b, reconnect=false)[0m[m
+[92m2022-07-25 11:01:43 I/Bot.313521996: Bot cancelled: Job was cancelled[0m[m
